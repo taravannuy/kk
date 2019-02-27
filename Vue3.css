@@ -1,0 +1,21 @@
+red
+{
+    color: blue;
+    padding: 50px;
+}
+.blue
+{
+    font-size: 90px;
+    background-color: aqua;
+}
+.we
+{
+    text-decoration: underline;
+    background-color:black;
+    color:white;
+}
+.they
+{
+  color: blueviolet  ;
+  font-size: 80px;
+}

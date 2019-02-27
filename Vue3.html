@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="Vue3.css"> 
+        <title> Vue Beksluy </title>
+    </head>
+    
+    <body>
+        <div id="Vue">
+            <p :style="{color:por,padding:kbal,fontSize:kbal }">first style</p> 
+            <p v-bind:style="styleobject">first style</p>
+        </div>
+        <script>
+        var ke = new Vue({
+            el:"#Vue",
+            data :{
+              por:"orange" ,
+              kbal:"50px" ,
+              styleobject:{
+                  color:"orange",
+                  fontSize:"50px",
+                  padding:"50px"
+              }
+            }
+        })
+        </script>
+        
+
+        
+            <div id="app">
+            <p :style="[arr1,arr2]">enjoy depression</p>
+            </div>
+           <script>
+            var you= new Vue({
+                el:"#app",
+                data: {
+                    arr1: {
+                        padding:"60px",
+                        color:"green",
+                        backgroundColor:"#fa2"
+                    },
+                    arr2: {
+                        color: "red",
+                        fontSize:"80px",
+                        border:"1px solid green"
+                    }
+                }
+            })
+             </script>
+
+           
+             <div id="app1"> 
+                 <p v-bind:class="{they:true}">min yol min yol te min yol te min yol te </p>
+                 <p :class = "{blue:k}">holla</p>
+            </div>
+            <script>
+           var you2= new Vue({
+               el:"#app1",
+               data: {
+                
+                   k:true,
+                   
+                }
+          })
+           </script>
+    </body>
+</html>
